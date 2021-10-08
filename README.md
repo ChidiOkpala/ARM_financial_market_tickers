@@ -59,4 +59,4 @@ It sends an error log of the users browser to the application sentry account and
 
 5. marketaux API seems to be well documented, unfortunately, i was unable to find an endpoint that gives me a list of countries. So i had to manually add that myself in my constant file.
 I did find an endpoint that gives a list of industries, which i used to fetch the industry list.
-So my improvement for the maeketaux will be to add endpoint to fetch list of countries. Maybe the couls also expand their free usage limit of 100 endpoints per day.
+So my improvement for the maeketaux will be to add endpoint to fetch list of countries. Maybe they could also expand their free usage limit of 100 endpoints per day.
