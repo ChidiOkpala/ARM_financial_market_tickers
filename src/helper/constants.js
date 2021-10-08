@@ -1,4 +1,4 @@
-export const API_TOKEN = '7CzM1frdPNq4v8jsThdQg21wkEBjg5nM4TRZ22ou';
+export const API_TOKEN = 'i6yPVj14M54tq7b2A8U4lyoxh2Zd21MswsVSGiPJ';
 
 const financeMarketEndPoint = 'https://api.marketaux.com/v1/news/all';
 
