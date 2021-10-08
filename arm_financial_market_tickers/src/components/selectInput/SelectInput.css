@@ -1,0 +1,9 @@
+.select-input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-input-wrapper .label {
+  margin-bottom: 15px;
+  color: bisque;
+}

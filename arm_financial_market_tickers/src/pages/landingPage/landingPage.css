@@ -1,0 +1,46 @@
+.landing-page-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a3059;
+}
+
+.landing-page-wrapper img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.landing-page-wrapper .explainer {
+  font-size: 20px;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-page-wrapper .link-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  background-color: #ffffff;
+  color: #777;
+  padding: 0 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 1px 2px -2px rgb(0 0 0 / 16%), 0 3px 6px 0 rgb(0 0 0 / 12%), 0 5px 12px 4px rgb(0 0 0 / 9%);
+}
+
+.landing-page-wrapper .link-button:first-of-type {
+  margin-right: 20px;
+}

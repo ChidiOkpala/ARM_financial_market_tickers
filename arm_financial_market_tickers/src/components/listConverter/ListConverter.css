@@ -1,0 +1,17 @@
+.list-converter-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-converter-wrapper > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  padding: 0 5px;
+  background-color: #1a3059;
+  color: bisque;
+  border-radius: 5px;
+  font-size: 13px;
+  margin: 0 5px 5px 0;
+}
