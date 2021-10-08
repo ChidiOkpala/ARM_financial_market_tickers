@@ -6,7 +6,7 @@ This repo is hosted on [Chidi's technical assessment](https://chidi-arm-market-n
 
 ## NOTE: 
 While testing the application, marketaux gives a limit of 100 API usage per day.
-Also, the `Market Stats (time series)` does not exist on the free plan for marketaux, so no data is returned. However, I handled the error message sent from marketaux in that case.
+Also, the `Market Stats (time series)` does not exist on the free plan for marketaux, so no data is returned. However, the error message sent from marketaux in that case was handled.
 
 ## Assessment Task
 
