@@ -4,6 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This repo is hosted on [Chidi's technical assessment](https://chidi-arm-market-news.netlify.app/).
 
+## NOTE: 
+While testing the application, marketaux gives a limit of 100 API usage per day.
+Also, the `Market Stats (time series)` does not exist on the free plan for marketaux, so no data is returned. However, I handled the error message sent from marketaux in that case.
+
 ## Assessment Task
 
 marketaux has a public API available at https://www.marketaux.com/documentation that you can use to get finance information, including global financial news and  market performing.  
@@ -55,4 +59,4 @@ It sends an error log of the users browser to the application sentry account and
 
 5. marketaux API seems to be well documented, unfortunately, i was unable to find an endpoint that gives me a list of countries. So i had to manually add that myself in my constant file.
 I did find an endpoint that gives a list of industries, which i used to fetch the industry list.
-So my improvement for the maeketaux will be to add endpoint to fetch list of countries.
+So my improvement for the maeketaux will be to add endpoint to fetch list of countries. Maybe the couls also expand their free usage limit of 100 endpoints per day.

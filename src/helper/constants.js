@@ -20,7 +20,7 @@ export const getTitleFromParam = (param) => {
 };
 
 export const buildIndustryOptions = (industries) => {
-  return industries?.map(industry => ({
+  return industries.map(industry => ({
     'value': industry,
     'label': industry
   }))

@@ -50,7 +50,7 @@ const NewsPage = () => {
 
   useEffect(() => {
     axios.get(`${entityIndustryEndpoint}?api_token=${API_TOKEN}`)
-      .then(({ data }) => setIndustries({...data}))
+      .then(({ data }) => setIndustries(data.data))
   }, [])
 
   useEffect(() => {
@@ -65,7 +65,7 @@ const NewsPage = () => {
       axios.get(endPoint)
         .then(({ data }) => {
           setIsFetching(false)
-          setNewsList({...data})
+          setNewsList(data.data)
         })
         .catch(({ response }) => {
           setErrorMessage(response.data.error.message)
