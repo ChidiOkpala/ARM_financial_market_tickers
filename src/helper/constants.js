@@ -14,20 +14,21 @@ export const newsFilterParams = [
 ];
 
 export const getTitleFromParam = (param) => {
-  return param.split('-')
+  return param?.split('-')
     .map(word => word[0].toUpperCase() + word.slice(1))
     .join(' ')
 };
 
 export const buildIndustryOptions = (industries) => {
-  return industries.map(industry => ({
+  return industries?.map(industry => ({
     'value': industry,
     'label': industry
   }))
 };
 
 const getValueFromCountry = (country) => {
-  const splittedCountry = country.split(' ')
+  const splittedCountry = country?.split(' ')
+
   return splittedCountry[splittedCountry.length - 1]
     .replace(/[()]/g, '')
 };
