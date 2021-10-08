@@ -1,0 +1,21 @@
+.skeleton-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.skeleton-wrapper > div {
+  margin-top: 20px;
+  width: 70%;
+  max-width: 900px;
+}
+
+.skeleton-wrapper > div div {
+  margin: 15px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .skeleton-wrapper > div {
+    width: 100%;
+  }
+}

@@ -19,6 +19,7 @@
   font-size: 20px;
   color: #ffffff;
   margin: 20px 0;
+  text-align: center;
 }
 
 .button-wrapper {
@@ -38,9 +39,29 @@
   border-radius: 5px;
   font-weight: bold;
   text-decoration: none;
-  box-shadow: 0 1px 2px -2px rgb(0 0 0 / 16%), 0 3px 6px 0 rgb(0 0 0 / 12%), 0 5px 12px 4px rgb(0 0 0 / 9%);
+  box-shadow: 0 1px 2px -2px rgb(0 0 0 / 16%),
+    0 3px 6px 0 rgb(0 0 0 / 12%),
+    0 5px 12px 4px rgb(0 0 0 / 9%);
 }
 
 .landing-page-wrapper .link-button:first-of-type {
   margin-right: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .landing-page-wrapper img {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .button-wrapper {
+    flex-direction: column;
+  }
+
+  .landing-page-wrapper .link-button:first-of-type {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
 }

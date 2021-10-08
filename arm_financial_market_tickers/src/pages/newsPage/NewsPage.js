@@ -14,6 +14,9 @@ import {
 import { NewsCard } from '../../components/newsCard/NewsCard';
 import { SelectInput } from '../../components/selectInput/SelectInput';
 import { ErrorAlert } from '../../components/errorAlert/ErrorAlert';
+import { 
+  NewsCardLoadingState 
+} from '../../components/newsCardLoadingState/NewsCardLoadingState';
 import './NewsPage.css';
 
 const NewsPage = () => {
@@ -54,15 +57,14 @@ const NewsPage = () => {
     const isUrlParamValid = newsFilterParams.find(params => params === newsFilter);
 
     if (isUrlParamValid) {
-      const endPoint = 
-        `${getBaseEndPoint(newsFilter)}?${industryValues}${countryValues}language=en&api_token=${API_TOKEN}`
+      const endPoint = `${getBaseEndPoint(newsFilter)}?${industryValues}${countryValues}language=en&api_token=${API_TOKEN}`
       setIsFetching(true)
       setErrorMessage()
 
       axios.get(endPoint)
         .then(({ data }) => {
           setIsFetching(false)
-          setNewsList(data)
+          setNewsList(data.data)
         })
         .catch(({ response }) => {
           setErrorMessage(response.data.error.message)
@@ -97,10 +99,9 @@ const NewsPage = () => {
         />
       </div>
       <div className="news-list-wrapper">
-        <div>is fetching...</div>
         {
           isFetching
-            ? <div>is fetching...</div>
+            ? <NewsCardLoadingState />
             : newsList.map((news, id) => <NewsCard key={id} {...news} />)
         }
         {errorMessage && (<ErrorAlert errorMessage={errorMessage} />)}
