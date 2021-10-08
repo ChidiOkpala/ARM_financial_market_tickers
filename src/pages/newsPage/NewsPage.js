@@ -50,21 +50,22 @@ const NewsPage = () => {
 
   useEffect(() => {
     axios.get(`${entityIndustryEndpoint}?api_token=${API_TOKEN}`)
-      .then(({ data }) => setIndustries(data.data))
+      .then(({ data }) => setIndustries({...data}))
   }, [])
 
   useEffect(() => {
     const isUrlParamValid = newsFilterParams.find(params => params === newsFilter);
 
     if (isUrlParamValid) {
-      const endPoint = `${getBaseEndPoint(newsFilter)}?${industryValues}${countryValues}language=en&api_token=${API_TOKEN}`
+      const endPoint =
+        `${getBaseEndPoint(newsFilter)}?${industryValues}${countryValues}language=en&api_token=${API_TOKEN}`
       setIsFetching(true)
       setErrorMessage()
 
       axios.get(endPoint)
         .then(({ data }) => {
           setIsFetching(false)
-          setNewsList(data.data)
+          setNewsList({...data})
         })
         .catch(({ response }) => {
           setErrorMessage(response.data.error.message)
