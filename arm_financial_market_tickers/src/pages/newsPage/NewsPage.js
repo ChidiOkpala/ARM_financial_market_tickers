@@ -54,7 +54,8 @@ const NewsPage = () => {
     const isUrlParamValid = newsFilterParams.find(params => params === newsFilter);
 
     if (isUrlParamValid) {
-      const endPoint = `${getBaseEndPoint(newsFilter)}?${industryValues}${countryValues}language=en&api_token=${API_TOKEN}`
+      const endPoint = 
+        `${getBaseEndPoint(newsFilter)}?${industryValues}${countryValues}language=en&api_token=${API_TOKEN}`
       setIsFetching(true)
       setErrorMessage()
 
