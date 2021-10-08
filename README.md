@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This repo is hosted on [Chidi's technical assessment](https://chidi-arm-market-news.netlify.app/).
+This repo is hosted on [Chidi's technical assessment](https://chidi-arm-market.netlify.app/).
 
 ## NOTE: 
 While testing the application, marketaux gives a limit of 100 API usage per day.
